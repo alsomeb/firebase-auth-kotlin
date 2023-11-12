@@ -13,7 +13,7 @@ Before running the application, make sure you have the following dependencies:
 Before running the application, configure the Firebase Admin SDK with your own Firebase project credentials.
 
 - Check **src/config/FirebaseConfig.kt** for help with init firebase SDK
-- application.yml **PROJECT_ID** env variable is your project id on firebase
+- application.yml  -   **PROJECT_ID** env variable is your project id on firebase
 
 ## Endpoints
 **GET /api/firebase/user:** Get information about the currently logged-in user.
