@@ -13,10 +13,12 @@ class FirebaseConfig {
 
     // DOCS
     // https://firebase.google.com/docs/admin/setup
+    // https://firebase.google.com/docs/auth/admin/verify-id-tokens
 
     @Bean
     fun initFireBaseApp() {
         try {
+            // You can generate your private key json at your Project Settings -> Service Accounts -> Generate new Private key
             val serviceAccount = FileInputStream("private_key.json")
 
             val options = FirebaseOptions.builder()
