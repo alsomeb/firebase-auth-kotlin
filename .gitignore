@@ -37,4 +37,4 @@ out/
 .vscode/
 
 ### IGNORE
-resources/private_key.json
+private_key.json
