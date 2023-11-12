@@ -1,5 +1,5 @@
 # Firebase with Spring Security App
-This is a sample Spring Boot application that integrates Firebase Authentication with Spring Security. The application demonstrates how to verify Firebase JWTs on the server side using the Firebase Admin SDK.
+This is a sample Spring Boot 3+ application that integrates Firebase Authentication with Spring Security. The application demonstrates how to verify Firebase JWTs on the server side using the Firebase Admin SDK.
 
 ## Prerequisites
 Before running the application, make sure you have the following dependencies:
