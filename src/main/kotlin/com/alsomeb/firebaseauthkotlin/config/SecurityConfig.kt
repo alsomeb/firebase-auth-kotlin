@@ -2,6 +2,7 @@ package com.alsomeb.firebaseauthkotlin.config
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.http.HttpMethod
 import org.springframework.security.config.Customizer
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.http.SessionCreationPolicy
@@ -13,7 +14,8 @@ class SecurityConfig {
     @Bean
     fun securityFilterChain(http: HttpSecurity): SecurityFilterChain {
          http.authorizeHttpRequests {
-            it.anyRequest()
+             it.requestMatchers(HttpMethod.OPTIONS).permitAll()
+             it.anyRequest()
                 .authenticated()
         }
 
@@ -23,6 +25,6 @@ class SecurityConfig {
 
         http.oauth2ResourceServer{it.jwt(Customizer.withDefaults())}
 
-        return http.build();
+        return http.build()
     }
 }
