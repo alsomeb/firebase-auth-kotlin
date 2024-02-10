@@ -20,7 +20,7 @@ class SecurityConfig {
         }
 
         http.csrf{it.disable()}
-        http.httpBasic(Customizer.withDefaults())
+        //http.httpBasic(Customizer.withDefaults())
         http.sessionManagement{it.sessionCreationPolicy(SessionCreationPolicy.STATELESS)}
 
         http.oauth2ResourceServer{it.jwt(Customizer.withDefaults())}
