@@ -14,7 +14,7 @@ Before running the application, configure the Firebase Admin SDK with your own F
 
 - Check **src/config/FirebaseConfig.kt** for help with init firebase SDK
 - application.yml  -   **PROJECT_ID** env variable is your project id on firebase
-- add your .json file needed for Firebase Init (You get this from Firebase Settings on the web)
+- You can generate your private key json at your Project Settings -> Service Accounts -> Generate new Private key
 
 ## Endpoints
 **GET /api/firebase/user:** Get information about the currently logged-in user.
